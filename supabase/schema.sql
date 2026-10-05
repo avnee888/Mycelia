@@ -44,6 +44,7 @@ create table contact_clusters (
   cluster_id uuid not null references clusters(id) on delete cascade,
   source_handle varchar(50),
   target_handle varchar(50),
+  label varchar(100),
   primary key (contact_id, cluster_id)
 );
 
